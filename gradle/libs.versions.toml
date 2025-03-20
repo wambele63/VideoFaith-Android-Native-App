@@ -1,0 +1,48 @@
+[versions]
+agp = "8.5.0"
+androidNetworking = "1.0.4"
+glide = "4.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+library = "2.4"
+material = "1.12.0"
+firebaseAuth = "23.1.0"
+firebaseFirestore = "25.1.1"
+adsMobileSdk = "0.11.0-alpha01"
+firebaseStorage = "21.0.1"
+emoji = "1.1.0"
+firebaseMessaging = "24.1.0"
+recyclerviewAnimators = "4.0.2"
+videocache = "2.7.1"
+interactivemedia = "3.36.0"
+inkGeometryAndroid = "1.0.0-alpha02"
+emojiAppcompat = "1.1.0"
+uploadservice = "4.9.3"
+
+[libraries]
+android-networking = { module = "com.github.amitshekhariitbhu.Fast-Android-Networking:android-networking", version.ref = "androidNetworking" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+library = { module = "com.daimajia.androidanimations:library", version.ref = "library" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+ads-mobile-sdk = { group = "com.google.android.libraries.ads.mobile.sdk", name = "ads-mobile-sdk", version.ref = "adsMobileSdk" }
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
+emoji = { group = "androidx.emoji", name = "emoji", version.ref = "emoji" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessaging" }
+recyclerview-animators = { module = "jp.wasabeef:recyclerview-animators", version.ref = "recyclerviewAnimators" }
+videocache = { module = "com.danikula:videocache", version.ref = "videocache" }
+interactivemedia = { group = "com.google.ads.interactivemedia.v3", name = "interactivemedia", version.ref = "interactivemedia" }
+ink-geometry-android = { group = "androidx.ink", name = "ink-geometry-android", version.ref = "inkGeometryAndroid" }
+emoji-appcompat = { group = "androidx.emoji", name = "emoji-appcompat", version.ref = "emojiAppcompat" }
+uploadservice = { group = "net.gotev", name = "uploadservice", version.ref = "uploadservice" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

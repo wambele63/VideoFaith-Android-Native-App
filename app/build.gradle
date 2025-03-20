@@ -1,0 +1,76 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id("io.objectbox")
+}
+android {
+    namespace 'videos.religious.platform'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "videos.religious.platform"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        multiDexEnabled true
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation libs.emoji
+    implementation libs.firebase.messaging
+    def billing_version = "7.1.1"
+    implementation "com.android.billingclient:billing:$billing_version"
+    implementation libs.interactivemedia
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation files('W:/DOWNLOADS/transcoder-android-0.11.2.aar')
+    implementation files('W:/DOWNLOADS/uploadservice-4.5.1.aar')
+    implementation 'com.github.yesidlazaro:GmailBackground:1.2.0'
+    def emoji2_version = "1.5.0"
+    implementation libs.recyclerview.animators
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:2.0.24'
+    implementation 'com.github.mehdiyari:Fallery:+'
+    implementation 'com.google.android.play:app-update:2.1.0'
+    implementation "androidx.emoji2:emoji2:$emoji2_version"
+    implementation "androidx.emoji2:emoji2-views:$emoji2_version"
+    implementation "androidx.emoji2:emoji2-views-helper:$emoji2_version"
+    //noinspection RiskyLibrary
+    implementation 'com.google.android.gms:play-services-ads:19.8.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.13.3'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.13.3'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.13.3'
+    implementation 'com.github.amitshekhariitbhu.Fast-Android-Networking:android-networking:1.0.4'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+    implementation libs.appcompat
+    implementation libs.material
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'com.ixuea:android-downloader:3.0.0'
+    implementation 'com.github.yalantis:ucrop:2.2.10'
+    implementation libs.firebase.auth
+    implementation libs.firebase.firestore
+    implementation libs.ads.mobile.sdk
+    implementation libs.firebase.storage
+    testImplementation libs.junit
+    implementation libs.glide
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/backsignup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:focusable="true"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Signup"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"/>
+    <include android:layout_centerInParent="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/loginpage" android:visibility="visible" layout="@layout/fragment_login"/>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/scrollall"
+    android:scrollbars="vertical"
+        android:visibility="gone"
+    android:layout_height="match_parent">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/alls2"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/editprofiles"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/layoutcover"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:background="@color/colorAccent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/profilecover"
+                android:layout_margin="0dp"
+                android:focusable="true"
+                android:src="@drawable/gradientbackcover"
+                android:padding="0dp"
+                android:layout_height="240dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Select Cover Photo "
+                android:id="@+id/profilecovereditable"
+                android:textColor="@color/colorAccent"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_margin="0dp"
+                android:drawableEnd="@drawable/ic_photo_camera_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_alignParentStart="true"
+                android:background="#88330033"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/editprofilelayout"
+            android:visibility="gone"
+            android:background="@color/colorAccent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="150dp"
+            android:background="@drawable/shadowround"
+            android:id="@+id/profileedit"
+            android:scaleType="centerInside"
+            android:layout_centerInParent="true"
+            android:layout_height="150dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Select Profile"
+            android:background="#88330033"
+            android:padding="5dp"
+            android:id="@+id/profileeditbtn"
+            android:textSize="16sp"
+            android:layout_below="@id/profileedit"
+            android:drawableEnd="@drawable/ic_photo_camera_black_24dp"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/startpage"
+        android:paddingStart="10dp"
+        android:visibility="visible"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="0dp"
+        android:textSize="18sp"
+        android:id="@+id/heads"
+        android:layout_marginBottom="30dp"
+        android:text="Enter Personal Details"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_mideum"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="0dp"
+        android:textSize="16sp"
+        android:layout_below="@id/heads"
+        android:text="Gender"
+        android:id="@+id/genderintro"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_mideum"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/radiogenders"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/colorLightAccent"
+        android:layout_below="@id/genderintro"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/gendermale"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Male"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/gendefemale"
+            android:layout_margin="5dp"
+            android:text="Female"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/genderOther"
+            android:layout_margin="5dp"
+            android:text="Other"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/religionintro"
+            android:text="Religion"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/roboto_mideum"
+            android:layout_below="@+id/radiogenders"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:id="@+id/radioreligions"
+            android:layout_below="@id/religionintro"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@color/colorLightAccent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radiochristian"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Christian"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/radiomuslim"
+                android:text="Muslim"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/religionther"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:text="Other"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/ageintro"
+        android:text="Age Range"
+        android:padding="5dp"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/radioreligions"
+        android:fontFamily="@font/roboto_mideum"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioage"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLightAccent"
+        android:layout_below="@+id/ageintro"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/agechild"
+            android:fontFamily="@font/roboto_regular"
+            android:text="&lt;18"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/agemidle"
+            android:text=" 18&gt; and &lt;65"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/ageold"
+            android:text="65&gt;"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/editdetailsonly"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:paddingStart="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/names"
+            android:text="Account Names"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:drawableStart="@drawable/ic_person_pin_black_smalldp"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto_mideum"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="Your Personal Name (required!)"
+            android:layout_below="@+id/names"
+            android:id="@+id/AccountName"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:textColorHint="@color/colorText"
+            android:tag="accountnametag"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="8dp"
+            android:drawablePadding="6dp"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/borderbottomdark"
+            android:backgroundTint="@color/colorAccent"
+            android:backgroundTintMode="multiply"
+            android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/channelEditName"
+        android:hint="Channel Name (required!)"
+        android:textSize="16sp"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_below="@+id/AccountName"
+        android:padding="8dp"
+        android:drawablePadding="6dp"
+        android:layout_marginTop="16dp"
+        android:tag="channelnametag"
+        android:textCursorDrawable="@null"
+        android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:background="@drawable/borderbottomdark"
+        android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/channelEditName"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerloc"
+            android:fadingEdge="horizontal"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/editdetailsonly"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/editcontacts">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/contacts"
+            android:text="Contacts and Password"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_person_pin_circle_black_24dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/roboto_mideum"
+            android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:hint="Email (required!)"
+        android:textSize="16sp"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+android:drawablePadding="10dp"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/colorText"
+        android:tag="emailtag"
+android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:background="@drawable/borderbottomdark"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="multiply"
+        android:id="@+id/Email"
+        android:layout_below="@+id/contacts"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:hint="Phone Number"
+        android:id="@+id/PhoneNumber"
+        android:layout_below="@+id/Email"
+        android:textSize="16sp"
+        android:textCursorDrawable="@null"
+        android:tag="phonetag"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+android:drawablePadding="10dp"
+android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:background="@drawable/borderbottomdark"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="multiply"
+        android:layout_height="wrap_content"/>
+        <EditText
+        android:layout_width="wrap_content"
+        android:hint="Password (required!)"
+        android:id="@+id/Password"
+        android:isScrollContainer="false"
+        android:textSize="16sp"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="20dp"
+            android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:tag="passwordtag"
+            android:textColorHint="@color/colorText"
+        android:textCursorDrawable="@null"
+        android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:background="@drawable/borderbottomdark"
+            android:backgroundTint="@color/colorAccent"
+            android:backgroundTintMode="multiply"
+        android:layout_below="@+id/PhoneNumber"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/alls2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content">
+     </RelativeLayout>
+        <Button
+            android:id="@+id/fabnext1"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:drawablePadding="10dp"
+            android:background="#330033"
+            android:text="Next"
+            android:padding="6dp"
+            android:layout_margin="16dp"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_regular"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:drawableEnd="@drawable/ic_arrow_forward_white_24dp"/>
+        <Button
+            android:id="@+id/fabprev1"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:drawablePadding="10dp"
+            android:elevation="0dp"
+            android:backgroundTint="#330033"
+            android:text="Previous"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:layout_margin="16dp"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorAccent"
+            android:drawableStart="@drawable/ic_arrow_back_white_24dp"
+        />
+
+    </RelativeLayout>
+</RelativeLayout>

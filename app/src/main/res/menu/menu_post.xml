@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_add_favourite"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="@string/action_add_favourite"/>
+    <item
+        android:id="@+id/hidepost"
+        android:visible="false"
+        android:icon="@drawable/ic_visibility_off_black_24dp"
+        android:orderInCategory="101"
+        android:title="Not Interested"/>
+</menu>

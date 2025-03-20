@@ -1,0 +1,41 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardBackgroundColor="@color/colorAccent"
+    card_view:contentPadding="10dp"
+    card_view:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardElevation="5dp"
+    card_view:cardCornerRadius="3dp"
+    android:layout_width="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/noposter"
+            android:layout_width="40dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:transitionName="appname"
+            android:foregroundGravity="center"
+            android:background="@color/Transparent"
+            android:focusable="true"
+            android:clickable="true"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+            android:layout_below="@id/noposter"
+                android:id="@+id/videodesc"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorText"
+                android:transitionName="@string/title_news"
+            android:padding="5dp"
+            android:gravity="center"
+                android:text=""
+                android:textSize="16sp"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

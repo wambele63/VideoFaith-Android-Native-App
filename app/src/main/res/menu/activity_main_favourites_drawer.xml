@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_icon"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_myvideos"
+            android:icon="@drawable/ic_video_library_black_24dp"
+            android:title="My videos" />
+        <item
+            android:id="@+id/nav_downloads"
+            android:icon="@drawable/ic_file_download_black_24dp"
+            android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_liked"
+            android:icon="@drawable/ic_thumb_up_black_24dp"
+            android:title="@string/menu_slideshow" />
+            <item
+                android:id="@+id/nav_viewed"
+                android:icon="@drawable/ic_live_tv_black_24dp"
+                android:title="Top Inspired Videos" />
+            <item
+                android:id="@+id/nav_subscriptions"
+                android:icon="@drawable/ic_subscriptions_black_24dp"
+                android:title="@string/menu_send" />
+    </group>
+
+    <item android:title="Monetization" android:enabled="false" android:checkable="true">
+        <menu >
+            <item
+                android:id="@+id/nav_business"
+                android:enabled="false"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
+                android:title="Earn Money(Not eligible)" />
+            <item
+                android:id="@+id/nav_balance"
+                android:enabled="false"
+                android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+                android:title="Your Balance $0.1" />
+        </menu>
+    </item>
+    <item android:title="Configurations" android:checkable="true">
+        <menu>
+            <item
+                android:id="@+id/disableauto"
+                android:icon="@drawable/ic_remove_red_eye_black_24dp"
+                android:title="Switch Autoplay"/>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="App Settings" />
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_person_pin_black_24dp"
+                android:title="Edit Account" />
+        </menu>
+    </item>
+    <item android:title="Account Manager" android:checkable="true">
+        <menu >
+            <item
+                android:enabled="false"
+                android:id="@+id/nav_swap_history"
+                android:icon="@drawable/ic_delete_forever_black_24dp"
+                android:title="@string/menu_swap" />
+            <item
+                android:enabled="true"
+                android:id="@+id/nav_verify_email"
+                android:icon="@drawable/ic_verifyemail"
+                android:title="Verify Email" />
+            <item
+                android:enabled="true"
+                android:id="@+id/nav_change_account_email"
+                android:icon="@drawable/ic_mail_black_24dp"
+                android:title="Change Email" />
+            <item
+                android:enabled="true"
+                android:id="@+id/nav_change_account_password"
+                android:icon="@drawable/ic_lock_black_24dp"
+                android:title="Change Password" />
+            <item
+                android:enabled="true"
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_undo_black_24dp"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

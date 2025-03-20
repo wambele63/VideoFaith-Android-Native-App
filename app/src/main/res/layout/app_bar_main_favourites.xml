@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFavourites">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:background="@color/colorPrimary"
+        android:layout_height="45dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:title="Downloads"
+            app:titleTextColor="@color/colorAccent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:padding="0dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/addnewvideo"
+            android:layout_toEndOf="@id/toolbar"
+            android:src="@drawable/ic_add_video"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorAccent"
+        android:layout_toEndOf="@id/addnewvideo"
+        android:fontFamily="@font/roboto_regular"
+        android:id="@+id/autoplay"
+        android:padding="5dp"
+        android:switchPadding="10dp"
+        android:paddingStart="10dp"
+        android:checked="false"
+        android:textSize="15sp"
+        android:text="AutoPlay"
+        />
+</RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main_favourites"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_delete_sweep_black_24dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

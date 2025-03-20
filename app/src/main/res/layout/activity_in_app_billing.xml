@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".InAppBilling">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:padding="2dp"
+    android:layout_height="wrap_content">
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:id="@+id/buttontop"
+        android:text="Pro Features"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+    <androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/buttontop"
+    app:srcCompat="@drawable/adfree"
+        android:id="@+id/adfreeimg"
+    android:layout_height="188dp"/>
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/adfreeimg"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:text="AdFree Forever"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorText"
+        android:id="@+id/adfreetxt"
+        android:drawableStart="@drawable/ic_check_box_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:text="Direct and Super Fast Download Speed"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_check_box_black_24dp"
+        android:layout_margin="10dp"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:text="Custom App Customization"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorText"
+        android:id="@+id/adfreetxt2"
+        android:drawableStart="@drawable/ic_check_box_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:text="Amazing UI Design and more..."
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_check_box_black_24dp"
+        android:layout_margin="10dp"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"/>
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+    </ScrollView>
+    <com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:text="Upgrade to PRO"
+    app:rippleColor="#d4af37"
+    app:cornerRadius="6dp"
+    android:shadowDx="0"
+    android:shadowDy="20"
+    android:padding="10dp"
+    android:layout_marginBottom="20dp"
+    android:shadowColor="@color/colorLightAccentAds"
+    android:shadowRadius="3"
+    style="@style/Widget.MaterialComponents.Button"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:backgroundTint="#66d4af37"
+        android:id="@+id/buttonupgrade"
+    android:backgroundTintMode="src_over"
+    android:textColor="@color/colorAccent"
+    android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

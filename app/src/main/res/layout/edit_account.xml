@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:id="@+id/warning"
+        android:drawableStart="@drawable/ic_info_black_24dp"
+        android:fontFamily="@font/roboto_black"
+        android:drawablePadding="10dp"
+        android:text="Please Fill Only the Fields You Want to Update"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_below="@+id/warning"
+    android:layout_width="match_parent"
+    android:id="@+id/escrollall"
+    android:scrollbars="vertical"
+        android:background="@color/colorAccent"
+    android:layout_marginTop="0dp"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorAccent"
+        app:cardElevation="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/ealls"
+        >
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/ealls2"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:padding="0dp"
+    android:background="@color/colorAccent"
+    android:id="@+id/estartpage"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/eeditprofiles"
+        android:background="@color/colorLightAccent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/elayoutcover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/eprofilecover"
+                android:layout_margin="0dp"
+                android:focusable="true"
+                android:src="@drawable/gradientbackcover"
+                android:padding="0dp"
+                android:layout_height="240dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Select Cover Photo (1080w)"
+                android:id="@+id/eprofilecovereditable"
+                android:textColor="@color/colorAccent"
+                android:padding="5dp"
+                android:layout_margin="0dp"
+                android:drawableEnd="@drawable/ic_edit_black_24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="#11000000"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/eeditprofilelayout"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/elayoutcover"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="120dp"
+            android:background="@drawable/shadowround"
+            android:id="@+id/eprofileedit"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_height="120dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Select Profile"
+            android:layout_alignParentStart="true"
+            android:background="#11000000"
+            android:padding="5dp"
+            android:id="@+id/eprofileeditbtn"
+            android:textSize="14sp"
+            android:layout_marginStart="0dp"
+            android:layout_alignParentBottom="true"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="0dp"
+                android:textSize="16sp"
+                android:text="Edit Account Profiles"
+                android:drawablePadding="2dp"
+                android:id="@+id/egenderintro"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/roboto_mideum"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/eradiogenders"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/egendermale"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/roboto_mideum"
+                android:text="Male"
+                android:textColor="@color/colorText"
+android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/egendefemale"
+                android:layout_margin="5dp"
+                android:text="Female"
+                android:textColor="@color/colorText"
+android:textSize="16sp"
+                android:fontFamily="@font/roboto_mideum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/egenderOther"
+                android:layout_margin="5dp"
+                android:text="Other"
+                android:textColor="@color/colorText"
+android:textSize="16sp"
+                android:fontFamily="@font/roboto_mideum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </RadioGroup>
+    </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/eageintro"
+        android:text="Select your Age Range"
+        android:background="@color/Transparent"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:fontFamily="@font/roboto_mideum"
+        android:drawableStart="@drawable/ic_arrow_downward_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_below="@+id/eeditprofiles"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/eradioage"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:background="@color/colorLightAccent"
+        android:layout_below="@+id/eageintro"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/eagechild"
+            android:fontFamily="@font/roboto_mideum"
+            android:text="Age &lt;18"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/eagemidle"
+            android:text=" Age 18&gt; and &lt;65"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/roboto_mideum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/eageold"
+            android:text="Age 65&gt;"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/roboto_mideum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/ereligionintro"
+        android:text="Select your Religion"
+        android:background="@color/colorAccent"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_mideum"
+        android:visibility="gone"
+        android:drawableStart="@drawable/ic_arrow_downward_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/eradioage"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/eradioreligions"
+        android:layout_below="@id/ereligionintro"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:background="@color/colorLightAccent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/eradiochristian"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/roboto_mideum"
+            android:text="Christian"
+            android:textColor="@color/colorText"
+android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/eradiomuslim"
+            android:layout_margin="5dp"
+            android:text="Muslim"
+            android:textColor="@color/colorText"
+android:textSize="16sp"
+            android:fontFamily="@font/roboto_mideum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/ereligionther"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorText"
+android:textSize="16sp"
+            android:text="Other"
+            android:fontFamily="@font/roboto_mideum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/eeditdetailsonly"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/estartpage"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/enames"
+            android:text="Channel Name and Personal Names"
+            android:background="@color/colorAccent"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorText"
+            android:drawableStart="@drawable/ic_person_pin_black_smalldp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_mideum"
+            android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/echannelEditName"
+        android:hint="Channel Name e.g `Christian Movies Tv` (required!)"
+        android:textSize="16sp"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_below="@+id/enames"
+        android:padding="20dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:tag="channelnametag"
+        android:textCursorDrawable="@null"
+        android:paddingStart="30dp"
+        android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:background="@drawable/borderbottomdark"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="multiply"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Your Personal Name (required!)"
+        android:layout_below="@+id/echannelEditName"
+        android:id="@+id/eAccountName"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp"
+        android:textColorHint="@color/colorText"
+        android:tag="accountnametag"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="20dp"
+android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borderbottomdark"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="multiply"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/eeditdetailsonly"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eeditcontacts">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/econtacts"
+            android:text="Contacts and Password"
+            android:background="@color/colorAccent"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_person_pin_circle_black_24dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/roboto_mideum"
+            android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Email (required!)"
+        android:textSize="16sp"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+android:drawablePadding="10dp"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/colorText"
+        android:tag="emailtag"
+android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:background="@drawable/borderbottomdark"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="multiply"
+        android:id="@+id/eEmail"
+        android:layout_below="@+id/econtacts"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Phone Number (optional!)"
+        android:id="@+id/ePhoneNumber"
+        android:layout_below="@+id/eEmail"
+        android:textSize="16sp"
+        android:textCursorDrawable="@null"
+        android:tag="phonetag"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+android:drawablePadding="10dp"
+android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:background="@drawable/borderbottomdark"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="multiply"
+        android:layout_height="wrap_content"/>
+        <EditText
+        android:layout_width="match_parent"
+        android:hint="Password (required!)"
+        android:id="@+id/ePassword"
+        android:isScrollContainer="false"
+        android:textSize="16sp"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="20dp"
+            android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:tag="passwordtag"
+            android:textColorHint="@color/colorText"
+        android:textCursorDrawable="@null"
+        android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:background="@drawable/borderbottomdark"
+            android:backgroundTint="@color/colorAccent"
+            android:backgroundTintMode="multiply"
+        android:layout_below="@+id/ePhoneNumber"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ealls2"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/efabsave"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawablePadding="10dp"
+        android:elevation="1dp"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/roboto_mideum"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="multiply"
+        android:text="Update"
+        android:paddingStart="30dp"
+        android:padding="20dp"
+        android:drawableStart="@drawable/ic_save_black_24dp"/>
+    <Button
+        android:id="@+id/efabnext1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="10dp"
+        android:elevation="0dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTintMode="multiply"
+        android:text="Next"
+        android:layout_margin="0dp"
+        android:background="@color/colorLightAccentAds"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/colorAccent"
+        android:drawableEnd="@drawable/ic_arrow_forward_white_24dp"/>
+    <Button
+        android:id="@+id/efabprev1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawablePadding="10dp"
+        android:elevation="0dp"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/efabsave"
+        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTintMode="multiply"
+        android:text="Previous"
+        android:padding="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@color/colorLightAccentAds"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:drawableStart="@drawable/ic_arrow_back_white_24dp"/>
+    <Button
+        android:id="@+id/efabprev2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawablePadding="10dp"
+        android:elevation="0dp"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:text="Previous"
+        android:layout_below="@id/efabsave"
+        android:background="@color/colorLightAccentAds"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/colorAccent"
+        android:drawableStart="@drawable/ic_arrow_back_white_24dp"/>
+    <TextView
+        android:id="@+id/efaberror"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:text="Email Alreay exists"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_below="@id/efabprev2"
+        android:background="@color/colorAccent"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:drawableStart="@drawable/ic_error_red_24dp"/>
+    <Button
+        android:id="@+id/efabnext2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawablePadding="10dp"
+        android:elevation="1dp"
+        android:background="@color/colorLightAccentAds"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/roboto_regular"
+        android:backgroundTintMode="multiply"
+        android:text="Next (2/2)"
+        android:layout_below="@+id/efabprev1"
+        android:textColor="@color/colorAccent"
+        android:drawableEnd="@drawable/ic_arrow_forward_white_24dp"/>
+    <ImageButton
+        android:id="@+id/efabloading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:drawablePadding="10dp"
+        android:elevation="1dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:background="@null"
+        android:text="Create Channel Account"
+        />
+    </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

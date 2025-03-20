@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="1dp"
+    android:layout_marginBottom="0dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorAccent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="videos.religious.platform.New"
+    tools:showIn="@layout/fragment_new">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_news_related"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:scrollbarDefaultDelayBeforeFade="@android:integer/config_longAnimTime"
+        android:scrollbars="horizontal" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Menu_list">
+        <item>Profile</item>
+        <item>Friends</item>
+        <item>Messages</item>
+        <item>Account</item>
+        <item>Videos</item>
+        <item>Audios</item>
+        <item>Forum</item>
+        <item>Fruits</item>
+        <item>Sermones</item>
+        <item>Wives</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs" />
+</resources>

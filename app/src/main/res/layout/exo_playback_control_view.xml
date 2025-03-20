@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layoutDirection="ltr"
+    android:id="@+id/exo_control"
+    android:background="#44000000"
+    android:paddingStart="3dp"
+    android:paddingEnd="3dp"
+    android:orientation="vertical"
+    tools:targetApi="28">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="0dp"
+        android:layout_gravity="start|bottom"
+        android:orientation="horizontal">
+
+        <ImageButton android:id="@id/exo_rew"
+            android:tint="@color/colorLightAccent"
+            style="@style/ExoMediaButton.Rewind"/>
+
+        <ImageButton android:id="@id/exo_play"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/ExoMediaButton.Pause"
+            android:background="@color/Transparent"
+            android:src="@drawable/ic_play_circle_filled_black_24dp"
+            />
+        <ImageButton android:id="@id/exo_pause"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/ExoMediaButton.Pause"
+            android:background="@color/Transparent"
+            android:src="@drawable/ic_pause_circle_filled_black_24dp"
+            />
+
+        <ImageButton android:id="@id/exo_ffwd"
+            android:tint="@color/colorLightAccent"
+            style="@style/ExoMediaButton.FastForward"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Download"
+            android:visibility="visible"
+            android:text="360p"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:drawableEnd="@drawable/ic_arrow_drop_up_white_24dp"
+            android:id="@id/qualityoption"
+            />
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Download"
+            android:layout_marginStart="10dp"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical"
+            android:background="@color/Transparent"
+            android:src="@drawable/download"
+            android:id="@+id/exodownload"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <TextView android:id="@id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_gravity="bottom"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorAccent"/>
+
+        <View android:id="@id/exo_progress_placeholder"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp"
+            android:layout_gravity="bottom"
+            android:layout_height="16dp"/>
+
+        <TextView android:id="@id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingLeft="4dp"
+            android:layout_gravity="bottom"
+            android:paddingRight="4dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorAccent"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="fullvideo"
+            android:src="@drawable/ic_screen_rotation_black_24dp"
+            android:visibility="visible"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="3dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom|end"
+            android:background="@color/Transparent"
+            android:id="@+id/fullvideo"
+            />
+    </LinearLayout>
+</LinearLayout>

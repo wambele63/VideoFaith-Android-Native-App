@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cardnew"
+    android:layout_width="150dp"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:src="@drawable/gallerysmall"
+            android:id="@+id/fullcardimage"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/fullcardtext"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/fullcardtime"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/fullcardimageurl"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/fullcardid"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/fullcardheader"
+            android:layout_below="@id/fullcardimage"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:maxLines="3"
+            android:drawableStart="@drawable/ic_radio"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorText"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="track_selection_dialog_tab_layout" type="id" />
+    <item name="track_selection_dialog_view_pager" type="id" />
+    <item name="track_selection_dialog_cancel_button" type="id" />
+    <item name="track_selection_dialog_ok_button" type="id" />
+</resources>

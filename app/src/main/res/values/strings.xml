@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">VideoFaith</string>
+    <string name="app_name_channel"></string>
+    <string name="app_name_cover">VideoFaith(Cover photo)</string>
+    <string name="app_name_profile">VideoFaith(Profile photo)</string>
+    <string name="title_news">News</string>
+    <string name="emailhint">Enter Email Adress</string>
+    <string name="channelhint">Enter Channel Name</string>
+    <string name="personnamehint">Enter Personal Name</string>
+    <string name="phonehint">Enter Phone Number</string>
+    <string name="passwordhint">Enter Account Password</string>
+    <string name="ad_unit_id">ca-app-pub-2482391667806872/5240720484</string>
+    <string name="imageAd_unit_id">ca-app-pub-2482391667806872/5240720484</string>
+    <string name="RewardedAd_unit_id">ca-app-pub-2482391667806872/4143261235</string>
+    <string name="NewsBannerAd_unit_id">ca-app-pub-2482391667806872/9315696860</string>
+    <string name="Interstitial_unit_id">ca-app-pub-2482391667806872/8993503908</string>
+    <string name="admob_app_id">ca-app-pub-2482391667806872~8009180592</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next" translatable="false">Play Next</string>
+    <string name="backdrop_title">MobileFaith</string>
+    <string name="your_channel">Your Channel</string>
+    <string name="favorites">Favourites</string>
+    <string name="switch_channel">Popular Videos</string>
+    <string name="remove_ads" translatable="false">Remove Ads</string>
+    <string name="trending">Trending</string>
+    <string name="downloads">Downloads</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="settings">Login/Signup</string>
+    <string name="about">About Platform</string>
+    <string name="subscribe">SUBSCRIBE</string>
+    <string name="terms">Terms and Policies</string>
+    <string name="backdrop_subtitle">Meet Top Global Christian Videos</string>
+    <string name="channeldesc">Meet Top Global Christian Videos and Meet Top Global Christian Videos and Meet Top Global Christian Videos and </string>
+    <string name="title_activity_channel">Best Global Gospel</string>
+    <string name="tab_text_1">Collection</string>
+    <string name="tab_text_2">Info</string>
+    <string name="uploadingVideo">Uploading Video</string>
+    <string name="title_activity_main_favourites">MainFavourites</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Best Global Gospel</string>
+    <string name="nav_header_subtitle">wambele63@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Favourites Videos</string>
+    <string name="menu_slideshow">Liked Videos</string>
+    <string name="menu_tools">Downloads</string>
+    <string name="menu_share">All Watched Videos</string>
+    <string name="menu_send">Subscriptions</string>
+    <string name="menu_swap">Delete Account</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_full_screen_video">FullScreenVideo</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
